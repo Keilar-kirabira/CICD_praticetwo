@@ -4,14 +4,14 @@ name: Hello world workflow
 #Events that trigger this workflow
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master, staging]
+    branches: [main, staging]         # branches change
 
-# Jobs t run 
+# Jobs to run 
 jobs:
   greet:
-  # the type of run to use e.g windows,ubuntu,mac
+  # The type of run to use e.g windows,ubuntu,mac
     runs-on: ubuntu-latest
   # Steps to excute in this job
     steps:
